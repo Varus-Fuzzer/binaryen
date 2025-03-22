@@ -66,6 +66,9 @@ public:
   read(std::string filename, Module& wasm, std::string sourceMapFilename = "");
   // check whether a file is a wasm binary
   bool isBinaryFile(std::string filename);
+  void readBinaryData(std::vector<char>& input,
+                      Module& wasm,
+                      std::string sourceMapFilename);
 
 private:
   bool DWARF = false;
@@ -76,9 +79,6 @@ private:
 
   void readStdin(Module& wasm, std::string sourceMapFilename);
 
-  void readBinaryData(std::vector<char>& input,
-                      Module& wasm,
-                      std::string sourceMapFilename);
 };
 
 class ModuleWriter : public ModuleIOBase {
