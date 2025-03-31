@@ -1,0 +1,17 @@
+/usr/local/bin/wasm-opt
+/usr/local/bin/wasm-metadce
+/usr/local/bin/wasm2js
+/usr/local/bin/wasm-emscripten-finalize
+/usr/local/bin/wasm-as
+/usr/local/bin/wasm-dis
+/usr/local/bin/wasm-ctor-eval
+/usr/local/bin/wasm-shell
+/usr/local/bin/wasm-reduce
+/usr/local/bin/wasm-merge
+/usr/local/bin/wasm-fuzz-types
+/usr/local/bin/wasm-fuzz-lattices
+/usr/local/bin/wasm-split
+/usr/local/bin/binaryen-unittests
+/usr/local/lib/libbinaryen.so
+/usr/local/include/binaryen-c.h
+/usr/local/include/wasm-delegations.def

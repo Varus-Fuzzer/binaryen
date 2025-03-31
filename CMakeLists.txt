@@ -7,6 +7,8 @@ cmake_minimum_required(VERSION 3.16.3)
 # to reduce this for compatability with emsdk.
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.14" CACHE STRING "Minimum OS X deployment version")
 
+add_definitions(-DPRINT_LOG)
+
 project(binaryen LANGUAGES C CXX VERSION 122)
 include(GNUInstallDirs)
 

@@ -106,7 +106,9 @@ struct ValidationInfo {
       return stream;
     }
     auto& ret = printFailureHeader(func);
+#ifdef PRINT_LOG
     ret << text << ", on \n";
+#endif
     return printModuleComponent(curr, ret, wasm);
   }
 
