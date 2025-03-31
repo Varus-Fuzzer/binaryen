@@ -7,7 +7,12 @@ cmake_minimum_required(VERSION 3.16.3)
 # to reduce this for compatability with emsdk.
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.14" CACHE STRING "Minimum OS X deployment version")
 
-add_definitions(-DPRINT_LOG)
+if (ENABLE_PRINT_LOG)
+    message(STATUS "PRINT_LOG is enabled.")
+    add_definitions(-DPRINT_LOG)
+else()
+    message(STATUS "PRINT_LOG is disabled.")
+endif()
 
 project(binaryen LANGUAGES C CXX VERSION 122)
 include(GNUInstallDirs)
